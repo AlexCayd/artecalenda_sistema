@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema - ArteCalenda</title>
+    <link rel="stylesheet" href="../../css/app.css">
+</head>
+<body onload="desplegarDatosPorEditar()">
+    <h1 class="titulo">Editar Usuario</h1>
+    <form class="contenedor">
+        <div class="columnas">
+            <div class="formulario__campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre" value="Juan Francisco">
+            </div>
+            <div class="formulario__campo">
+                <label for="email">Email (No modificable)</label>
+                <input type="email" class="form-control" id="email" placeholder="Email" readonly value="juanfrancisco@gmail.com">
+            </div>
+        </div>
+        <div class="columnas">
+            <div class="formulario__campo">
+                <label for="password">Contraseña</label>
+                <input type="password" class="form-control" id="password" placeholder="Contraseña" value="abcd1234">
+            </div>
+            <div class="formulario__campo">
+                <label for="password_confirmation">Confirmar Contraseña</label>
+                <input type="password" class="form-control" id="password_confirmation" placeholder="Confirmar Contraseña" value="abcd1234">
+            </div>
+        </div>
+        <div class="formulario__submit">
+            <a class="formulario__boton" id="confirmarBtn">Confirmar edicion</a>
+
+            <button type="button" class="formulario__boton" id="verContrasena" >Ver Contraseña</button>
+            
+        </div>
+    </form>
+    
+    <a style="margin-top: 25px;" href="registros.html" class="boton volver">Volver al Panel de Usuarios</a>
+    <script src="appusuarios.js"></script>
+    <script src="https://kit.fontawesome.com/5bb4703aed.js" crossorigin="anonymous"></script>
+</body>
+</html>

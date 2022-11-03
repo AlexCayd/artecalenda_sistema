@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema - ArteCalenda</title>
+    <link rel="stylesheet" href="../../css/app.css">
+</head>
+<body style="height: auto;" onload="cargarUsuarios()">
+    <h1 class="titulo" style="margin: 30px 0 10px 0;">Ver Usuarios</h1>
+    <div class="contenedor-agregar contenedor">
+        <a href="agregar.html" class="boton volver" style="margin-bottom: 15px; font-size: 22px;">Agregar Usuario</a>
+       
+    </div>
+   
+    <table class="table tabla contenedor" >
+        <thead class="tabla__thead">
+            <tr>
+                <th class="tabla__th">Nombre</th>
+                <th class="tabla__th">Correo electrónico</th>
+                <th class="tabla__th">Password</th>
+                <th class="tabla__th">Acciones</th>
+            </tr>
+        </thead>
+        
+        
+        <tbody id="cuerpoTabla">
+        
+        
+        </tbody>
+    </table>
+
+    <a href="../admin.html" class="boton volver" style="margin-bottom: 25px;">Volver al Panel de Administración</a>
+    <script src="appusuarios.js"></script>
+    <script src="https://kit.fontawesome.com/5bb4703aed.js" crossorigin="anonymous"></script>
+</body>
+</html>

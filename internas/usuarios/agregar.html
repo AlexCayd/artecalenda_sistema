@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema - ArteCalenda</title>
+    <link rel="stylesheet" href="../../css/app.css">
+</head>
+<body>
+    <h1 class="titulo">Agregar Usuario</h1>
+    <form class="contenedor">
+        <div class="columnas">
+            <div class="formulario__campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre"  placeholder="Nombre">
+            </div>
+            <div class="formulario__campo">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email"  placeholder="Email">
+            </div>
+        </div>
+        <div class="columnas">
+            <div class="formulario__campo">
+                <label for="password">Contraseña</label>
+                <input type="password" class="form-control" id="password" placeholder="Contraseña">
+            </div>
+            <div class="formulario__campo">
+                <label for="password_confirmation">Confirmar Contraseña</label>
+                <input type="password" class="form-control" id="password_confirmation" placeholder="Confirmar Contraseña">
+            </div>
+        </div>
+        <div class="formulario__submit">
+            <button type="submit" class="formulario__boton" id="btnAgregar">Agregar</button>
+            <button type="button" class="formulario__boton" id="verContrasenaAgregar" >Ver Contraseña</button>
+            
+        </div>
+       
+    </form>
+    <div class="formulario__submit">
+        
+    </div>
+    <button  class="formulario__boton" id="botonEjemplo"><a href="registros.html">RegresarBotons</a></button>
+    
+    <a style="margin-top: 25px;" href="registros.html" class="boton volver">Volver al Panel de Usuarios</a>
+    
+    <script src="appusuarios.js"></script>
+    <script src="https://kit.fontawesome.com/5bb4703aed.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f07167;
+    color: #fdfcdc;
+}
+
+a {
+    text-decoration: none;
+}
+
+.titulo {
+    font-size: 64px;
+    margin-bottom: 25px;
+}
+
+.formulario {
+    border: 1px solid #fdfcdc;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+label {
+    font-size: 28px;
+}
+
+input {
+    font-family: inherit;
+    font-size: 28px;
+    padding: 10px 15px;
+    background-color: #fdfcdc;
+    color: #f07167;
+    border: none;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: #f07167;
+}
+
+input:focus {
+    outline: none;
+}
+
+.campo {
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.boton {
+    font-size: 28px;
+    padding: 10px 25px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fdfcdc;
+    color: #f07167;
+    font-weight: bold;
+    transition: background-color .7s;
+}
+
+.boton:hover {
+    background-color: #fff;
+}
+
+.submit {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.admin {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.boton-admin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 80px;
+}
+
+.icono {
+    margin-right: 20px;
+}
+
+.boton-crud {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+
+.boton-crud i {
+    width: 400px;
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.volver {
+    padding: 10px 30px; 
+}
+
+/* FORMULARIO */
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.formulario__campo {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+    .columnas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+.formulario__boton {
+    font-family: inherit;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #fdfcdc;
+    color: #f07167;
+    border: none;
+    padding: 10px 65px;
+    cursor: pointer;
+    transition: .4s background-color;
+}
+
+.formulario__boton:hover {
+    background-color: #fff;
+}
+
+.formulario__submit {
+    display: flex;
+    justify-content: right;
+    margin-top: 15px;
+}
+
+/* REGISTROS */
+.tabla {
+    margin-bottom: 35px;
+    border-collapse: collapse;
+}
+
+.tabla th {
+    border: 1px solid #fdfcdc;
+    font-size: 24px;
+    padding: 15px;
+}
+
+.tabla tr td {
+    font-size: 24px;
+    padding: 15px 20px;
+    border-right: 1px solid #fdfcdc;
+}
+
+.tabla tr td:first-child {
+    border-left: 1px solid #fdfcdc;
+}
+
+.tabla tr:last-child {
+    border-bottom: 1px solid #fdfcdc;
+}
+
+.tabla tr:hover {
+    background-color: #fdfcdc;
+    color: #f07167;
+}
+
+.editar {
+    color: #fdfcdc;
+    background-color: #F39C12;
+    border-radius: 5px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    transition: .4s box-shadow;
+}
+
+.editar:hover {
+    box-shadow: 1px 1px 1px #f07167;
+}
+
+.eliminar {
+    color: #fdfcdc;
+    background-color: #DD4B39;
+    border-radius: 5px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    transition: .4s box-shadow;
+}
+
+.eliminar:hover {
+    box-shadow: 1px 1px 1px #f07167;
+}
+
+.contenedor-botones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+}
+
+.contenedor-agregar {
+    display: flex;
+    justify-content: right;
+}
